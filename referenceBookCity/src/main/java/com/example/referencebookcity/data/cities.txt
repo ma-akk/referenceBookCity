@@ -1,0 +1,1 @@
+1;Msk;Moscow;CFO;5000000;1147;2;Spb;Saint-Petersburg;NWFO;3000000;1812;3;Sochi;Krasnodar region;SFO;1000000;1838;4;Barnaul;Altay region;SFO;635585;1730;5;Gorno-Altaysk;Altay region;SFO;62861;1830;6;Kazan;Tatarstan;PFO;1257341;1005;

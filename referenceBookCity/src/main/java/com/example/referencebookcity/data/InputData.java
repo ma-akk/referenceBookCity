@@ -15,7 +15,7 @@ public class InputData {
         String dateStr;
         DateFormat format = new SimpleDateFormat("yyyy", Locale.ENGLISH);
 
-        File fileName = new File("src/main/java/com/example/referencebookcity/data/test.txt");
+        File fileName = new File("src/main/java/com/example/referencebookcity/data/cities.txt");
         Scanner scanner = new Scanner(fileName);
         scanner.useDelimiter(";");
         while (scanner.hasNext()) {

@@ -1,1 +1,0 @@
-1;Msk;Moscow;CFO;5000000;1147;2;Spb;Saint-Petersburg;NWFO;3000000;1812;3;Sochi;Krasnodar region;SFO;1000000;1838;

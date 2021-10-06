@@ -8,7 +8,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
-import java.util.List;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -46,6 +45,7 @@ public class ReferenceBookCityApplication implements CommandLineRunner {
         switch (opp) {
             case 0:
                 System.out.println("See you soon!");
+                scan.close();
                 cityServicies.exitApp(applicationContext);
                 break;
             case 1 :

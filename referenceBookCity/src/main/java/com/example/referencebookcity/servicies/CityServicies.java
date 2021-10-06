@@ -28,7 +28,7 @@ public class CityServicies {
     }
 
     public void exitApp(ApplicationContext applicationContext) {
-        SpringApplication.exit(applicationContext, () -> 0);
+        SpringApplication.exit(applicationContext, ()->0);
     }
 
     public List<City> getCities() {
