@@ -1,7 +1,6 @@
 package com.example.referencebookcity;
 
-import com.example.referencebookcity.models.City;
-import com.example.referencebookcity.repository.CityRepository;
+import com.example.referencebookcity.entity.City;
 import com.example.referencebookcity.servicies.CityServicies;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -38,6 +37,7 @@ public class ReferenceBookCityApplication implements CommandLineRunner {
     public void showMenu() {
         System.out.println("Reference Book of Cities. Choose the appropriate option (input the number)");
         System.out.println("1. List of cities;");
+        System.out.println("2. List of sort cities;");
         System.out.println("0. Exit");
     }
 
@@ -50,6 +50,10 @@ public class ReferenceBookCityApplication implements CommandLineRunner {
                 break;
             case 1 :
                 for (City city : cityServicies.getCities())
+                    System.out.println(city);
+                break;
+            case 2 :
+                for (City city : cityServicies.sortByName())
                     System.out.println(city);
                 break;
             default:

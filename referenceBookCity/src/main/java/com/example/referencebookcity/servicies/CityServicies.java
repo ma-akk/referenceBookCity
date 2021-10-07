@@ -1,10 +1,11 @@
 package com.example.referencebookcity.servicies;
 
 import com.example.referencebookcity.data.InputData;
-import com.example.referencebookcity.models.City;
+import com.example.referencebookcity.entity.City;
 import com.example.referencebookcity.repository.CityRepository;
 import org.springframework.boot.SpringApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -34,5 +35,10 @@ public class CityServicies {
     public List<City> getCities() {
         saveData();
         return (cityRepository.findAll());
+    }
+
+    public List<City> sortByName() {
+        saveData();
+        return (cityRepository.findAll(Sort.by(Sort.Order.asc("name").ignoreCase())));
     }
 }

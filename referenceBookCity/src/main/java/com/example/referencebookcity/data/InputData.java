@@ -1,6 +1,6 @@
 package com.example.referencebookcity.data;
 
-import com.example.referencebookcity.models.City;
+import com.example.referencebookcity.entity.City;
 import org.springframework.stereotype.Component;
 
 import java.io.File;
@@ -15,7 +15,7 @@ public class InputData {
         String dateStr;
         DateFormat format = new SimpleDateFormat("yyyy", Locale.ENGLISH);
 
-        File fileName = new File("src/main/java/com/example/referencebookcity/data/cities.txt");
+        File fileName = new File("src/main/resources/cities.txt");
         Scanner scanner = new Scanner(fileName);
         scanner.useDelimiter(";");
         while (scanner.hasNext()) {
